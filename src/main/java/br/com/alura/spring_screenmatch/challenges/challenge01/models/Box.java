@@ -24,4 +24,13 @@ public class Box<T> {
         }
         return null;
     }
+
+//    public void checkType(Object obj) {
+//        switch (obj) {
+//            case Integer i -> System.out.println("It is a number: " + i);
+//            case String s -> System.out.println("É uma string: " + s);
+//            case Double d -> System.out.println("É um double: " + d);
+//            default -> System.out.println("Tipo desconhecido");
+//        }
+//    }
 }
