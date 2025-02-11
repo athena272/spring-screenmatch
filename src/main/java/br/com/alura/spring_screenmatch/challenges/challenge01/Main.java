@@ -1,5 +1,6 @@
 package br.com.alura.spring_screenmatch.challenges.challenge01;
 import br.com.alura.spring_screenmatch.challenges.challenge01.models.Box;
+import br.com.alura.spring_screenmatch.challenges.challenge01.models.Person;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,5 +18,8 @@ public class Main {
         doubleBox.setContent(150.50);
         System.out.println(doubleBox.sumContent(350.50));
         System.out.println("--------------------------------------------");
+
+        Person amanda = new Person("Amanda", 18);
+        amanda.checkObject(amanda);
     }
 }
