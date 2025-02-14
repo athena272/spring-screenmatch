@@ -2,6 +2,8 @@ package br.com.alura.spring_screenmatch.challenges.challenge01;
 import br.com.alura.spring_screenmatch.challenges.challenge01.models.Box;
 import br.com.alura.spring_screenmatch.challenges.challenge01.models.Person;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Box<String> stringBox = new Box<>();
@@ -21,5 +23,17 @@ public class Main {
 
         Person amanda = new Person("Amanda", 18);
         amanda.checkObject(amanda);
+        System.out.println("--------------------------------------------");
+
+        List<Object> objects = List.of(42, "Java", 3.14, "Spring Boot");
+        for (Object object : objects) {
+            if (object instanceof Integer i) {
+                System.out.println("Doubled integer: " +  (i * 2));
+            } else if (object instanceof String s) {
+                System.out.println("Uppercase text: " + s.toUpperCase());
+            } else if(object instanceof Double d) {
+                System.out.println("Double number sum: " + (d + 1.5));
+            }
+        }
     }
 }
