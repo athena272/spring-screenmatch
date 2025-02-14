@@ -3,23 +3,15 @@ package br.com.alura.spring_screenmatch.challenges.challenge02;
 import br.com.alura.spring_screenmatch.challenges.challenge02.models.Evaluation;
 import br.com.alura.spring_screenmatch.challenges.challenge02.models.Task;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-@SpringBootApplication
-public class Main implements CommandLineRunner {
-    public static void main(String[] args) {
-        SpringApplication.run(Main.class, args);
-    }
-
-    @Override
-    public void run(String... args) throws Exception {
+public class Main {
+    public static void main(String[] args) throws IOException {
         System.out.println("Welcome to the counter!");
         System.out.println("----------------------");
         System.out.println("Enter a number for counting: ");
