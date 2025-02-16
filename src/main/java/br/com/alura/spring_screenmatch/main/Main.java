@@ -34,11 +34,7 @@ public class Main {
         //seasons.forEach(season -> System.out.println(season));
         seasons.forEach(System.out::println);
 
-        for (int i = 0; i < serieData.totalSeasons(); i++) {
-            List<EpisodeData> episodesSeason = seasons.get(i).episodes();
-            for (EpisodeData episodeData : episodesSeason) {
-                System.out.println("Title episode: " + episodeData.title());
-            }
-        }
+        seasons.forEach(season -> season.episodes().
+                forEach(episode -> System.out.println(episode.title())));
     }
 }
